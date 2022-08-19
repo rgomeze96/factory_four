@@ -1,0 +1,43 @@
+#root {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.parent {
+  background-color: rgb(201, 201, 201); 
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-top: 50px;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 10px 18px, rgba(0, 0, 0, 0.07) 0px 10px 10px;
+  color: black;
+  font-weight: bold;
+}
+
+.column {
+  float: left;
+  width: 20vw;
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+  }
+}
